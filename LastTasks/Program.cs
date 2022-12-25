@@ -8,7 +8,7 @@
             {
                 Console.WriteLine("\n\n0) Выход;");
                 Console.WriteLine("1) Поиск простых чисел от 0 до N;");
-                Console.WriteLine("2) ");
+                Console.WriteLine("2) Проверка года (ХХХХ) на високосность;");
                 Console.WriteLine("3) ");
                 Console.WriteLine("4) ");
                 Console.WriteLine("5) ");
@@ -47,6 +47,12 @@
                     task_1.CheckPrimeNums();
                 }
                 if (Mode == 2)
+                {
+                    Task_2 task_2 = new Task_2();
+                    task_2.ReadYearFromConsole();
+                    task_2.ViewAnswer();
+                }
+                if (Mode == 3)
                 {
 
                 }

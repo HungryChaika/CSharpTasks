@@ -65,11 +65,11 @@ namespace LastTasks
                 int NumOfDivisors = 0;
                 while (Count <= LimitationOfCalculations)
                 {
-                    if(ValuesNums[i] % Count == 0 && Count != ValuesNums[i])
+                    if (ValuesNums[i] % Count == 0 && Count != ValuesNums[i])
                     {
                         NumOfDivisors++;
                     }
-                    if(NumOfDivisors == 1 || ValuesNums[i] == 1)
+                    if (NumOfDivisors == 1 || ValuesNums[i] == 1)
                     {
                         FlagsNums[i] = false;
                         break;
