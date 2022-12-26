@@ -9,7 +9,7 @@
                 Console.WriteLine("\n\n0) Выход;");
                 Console.WriteLine("1) Поиск простых чисел от 0 до N;");
                 Console.WriteLine("2) Проверка года (ХХХХ) на високосность;");
-                Console.WriteLine("3) ");
+                Console.WriteLine("3) Переворачивание стрелок;");
                 Console.WriteLine("4) ");
                 Console.WriteLine("5) ");
                 Console.WriteLine("6) ");
@@ -53,6 +53,11 @@
                     task_2.ViewAnswer();
                 }
                 if (Mode == 3)
+                {
+                    Task_3 task_3 = new Task_3();
+                    task_3.ArrowDance();
+                }
+                if(Mode == 4)
                 {
 
                 }
