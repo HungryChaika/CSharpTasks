@@ -10,7 +10,7 @@
                 Console.WriteLine("1) Поиск простых чисел от 0 до N;");
                 Console.WriteLine("2) Проверка года (ХХХХ) на високосность;");
                 Console.WriteLine("3) Переворачивание стрелок;");
-                Console.WriteLine("4) ");
+                Console.WriteLine("4) Определение нахождения точки в окружности;");
                 Console.WriteLine("5) ");
                 Console.WriteLine("6) ");
                 Console.WriteLine("7) ");
@@ -58,6 +58,16 @@
                     task_3.ArrowDance();
                 }
                 if(Mode == 4)
+                {
+                    Task_4 task_4 = new Task_4();
+                    task_4.InitCoords();
+                    task_4.AnalyzeCoords();
+                }
+                if(Mode == 5)
+                {
+                    
+                }
+                if (Mode == 6)
                 {
 
                 }
