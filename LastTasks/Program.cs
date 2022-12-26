@@ -65,7 +65,8 @@
                 }
                 if(Mode == 5)
                 {
-                    
+                    Task_5 task_5 = new Task_5();
+                    task_5.DrawMultTable();
                 }
                 if (Mode == 6)
                 {
