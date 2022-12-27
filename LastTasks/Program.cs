@@ -11,8 +11,8 @@
                 Console.WriteLine("2) Проверка года (ХХХХ) на високосность;");
                 Console.WriteLine("3) Переворачивание стрелок;");
                 Console.WriteLine("4) Определение нахождения точки в окружности;");
-                Console.WriteLine("5) ");
-                Console.WriteLine("6) ");
+                Console.WriteLine("5) Отрисовка таблицы умножения;");
+                Console.WriteLine("6) Сортировка слов из файла;");
                 Console.WriteLine("7) ");
                 Console.WriteLine("8) ");
                 int Mode;
@@ -70,7 +70,13 @@
                 }
                 if (Mode == 6)
                 {
-
+                    Task_6 task_6 = new Task_6();
+                    task_6.Init();
+                    task_6.SortText();
+                }
+                if (Mode == 7)
+                {
+                    
                 }
             }
         }
