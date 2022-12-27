@@ -13,7 +13,7 @@
                 Console.WriteLine("4) Определение нахождения точки в окружности;");
                 Console.WriteLine("5) Отрисовка таблицы умножения;");
                 Console.WriteLine("6) Сортировка слов из файла;");
-                Console.WriteLine("7) ");
+                Console.WriteLine("7) Отправка сообщения на почту;");
                 Console.WriteLine("8) ");
                 int Mode;
                 while (true)
@@ -76,7 +76,10 @@
                 }
                 if (Mode == 7)
                 {
-                    
+                    Task_7 task_7 = new Task_7();
+                    task_7.Init();
+                    task_7.ValidateMailAddress();
+                    task_7.SendMessage();
                 }
             }
         }
