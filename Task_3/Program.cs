@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 //Написать программу по переворачиванию стрелочки.
 //В консоли должна отображаться нарисованная символами стрелочка
@@ -7,15 +6,15 @@ using System.Text;
 //В ходе работы программы нажатия должны считываться постоянно и стрелочка должна меняться.
 //Консоль должна очищаться перед каждым отображением.
 
-namespace LastTasks
+namespace Task_3
 {
-    public class Task_3
+    class Programm
     {
-
-        public void ArrowDance()
+        public static void Main(string[] args)
         {
-            while (true) {
-                Console.WriteLine("\nНажмите на клавишу стрелки или на Esc\n");
+            while (true)
+            {
+                Console.WriteLine("\n(Нажмите на клавишу стрелки или на Esc)\n");
                 ConsoleKeyInfo Arrow = Console.ReadKey();
                 switch (Arrow.Key)
                 {
@@ -36,12 +35,11 @@ namespace LastTasks
                         Console.WriteLine("\n\t" + char.ConvertFromUtf32(0x2193));
                         break;
                 }
-                if(Arrow.Key == ConsoleKey.Escape)
+                if (Arrow.Key == ConsoleKey.Escape)
                 {
                     break;
                 }
             }
-
         }
     }
 }

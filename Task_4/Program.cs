@@ -4,18 +4,17 @@
 //Написать программу, которая получает на вход две координаты
 //и проверяет находится ли точка в границах окружности.
 
-namespace LastTasks
+namespace Task_4
 {
-    public class Task_4
+    class Programm
     {
-        double X;
-        double Y;
-
-        public void InitCoords()
+        public static void Main(string[] args)
         {
-            Console.Write("\nВведите координаты точки\n");
+            double X;
+            double Y;
             while (true)
             {
+                Console.Write("\nВведите координаты точки:\n");
                 try
                 {
                     Console.Write("\nХ = ");
@@ -29,11 +28,7 @@ namespace LastTasks
                     Console.WriteLine("Некорректный ввод");
                 }
             }
-        }
-
-        public void AnalyzeCoords()
-        {
-            Console.Write("\nТочка" + ((X * X + (Y + 1) * (Y + 1) <= 4.0) ? " в " : " вне ") + "окружности.\n"); 
+            Console.Write("\nТочка" + ((X * X + (Y + 1) * (Y + 1) <= 4.0) ? " в " : " вне ") + "окружности.\n");
         }
     }
 }
